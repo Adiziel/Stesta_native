@@ -9,6 +9,11 @@ class LoginPage extends StatelessWidget {
     return Material(
       child: Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            onPressed: () =>
+                Navigator.pushNamed(context, MyRoutes.welcomeRoute),
+            icon: Icon(Icons.arrow_back),
+          ),
           backgroundColor: Colors.black87,
           elevation: 0.0,
         ),
@@ -113,7 +118,7 @@ class LoginPage extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.white,
-                                            width: 3.0,
+                                            width: 1.5,
                                           ),
                                         ),
                                         alignment: Alignment.center,
@@ -150,7 +155,7 @@ class LoginPage extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.white,
-                                            width: 3.0,
+                                            width: 1.5,
                                           ),
                                         ),
                                         alignment: Alignment.center,
